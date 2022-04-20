@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* BODY */
+body {
+   background: url(https://img.archiexpo.es/images_ae/photo-g/67453-3693041.jpg) no-repeat center center fixed;
+   font-family: 'Montserrat', sans-serif;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+section#kanban-title {
+    background: #6199c1a4;
+    padding: 10px;
+    border-radius: 8%;
+    height: 20px;
+}
+
+section#kanban-title h1 {
+    margin: 0px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    column-gap: 15px;
+    margin: 20px;
+}
+
+section.kanban-column {
+    background: rgba(255, 255, 255, 0.712);
+    border-radius: 2%;
+    padding: 10px;
+    height: auto;
+    width: 300px;
+    color: black;
+}
+
+section.kanban-column h1 {
+    margin: 10px;
+    font-size: 13px;
+    text-align: left;
+}
+
+div.task-card {
+    background: white;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5%;
+    padding: 1em;
+    margin-bottom: 0.5em;
+    height: 8em;
+    overflow: hidden;
+}
+
+div.task-card:hover {
+    background: #6199c1a4;
+    color: white;
+}
+
+div.task-card p.task-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.task-card p.task-description {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+span.delete-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+span.task-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+span.task-category img {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+span.delete-btn img {
+    margin: 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+span.delete-btn img.delete-item {
+    background-image: url(http://assets.stickpng.com/images/5a5798809538462e5a82d431.png);
+    background-size: cover;
+}
+
+span.task-category img#pc-item {
+    background-image: url(https://www.icons101.com/icon_ico/id_78899/pc.ico);
+    background-size: cover;
+}
+
+span.task-category img#cube-item {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTemgL0a_iO8vC-hbX3LPjbjv6UPrjLWh1xBA&usqp=CAU);
+    background-size: cover;
+}
+
+span.task-category img#smartphone-item {
+    background-image: url(https://previews.123rf.com/images/alexwhite/alexwhite1609/alexwhite160904338/62627204-dise%C3%B1o-plano-de-tel%C3%A9fono-inteligente-icono-de-web-redondo-amarillo.jpg);
+    background-size: cover;
+}
